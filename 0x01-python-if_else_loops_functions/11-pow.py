@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 def pow(a, b):
-    a = int(num1)
-    b = int(num2)
     
     p = a ** b
 
