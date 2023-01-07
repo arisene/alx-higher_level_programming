@@ -2,6 +2,4 @@
 def pow(a, b):
     
     p = a ** b
-
-    print(p)
-
+    return (power)
