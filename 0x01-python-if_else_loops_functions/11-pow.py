@@ -3,7 +3,5 @@ def pow(a, b):
     
     p = a ** b
 
-    print('a ^ b', p)
-
-print(pow('a','b'))
+    print(p)
 
