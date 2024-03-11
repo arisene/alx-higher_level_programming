@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#multiply and slice stings
 str = "Holberton School"
-print(f"{str * 3 }")
-print(f"{str[:9]}")
+str1 = 3 * str
+str2 = str[:9] 
+print("{}\n{}".format(str1,str2))

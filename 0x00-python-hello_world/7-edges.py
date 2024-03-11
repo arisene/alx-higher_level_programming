@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 word = "Holberton"
-#slice first three
-print(f"First 3 letters: {word[:3]}")
-#slice last two
-print(f"Last 2 letters: {word[-2:]}")
-#slice middle
-print(f"Middle word: {word[1:-1]}")
+word_first_three = word[:3]
+word_last_two = word[-2:]
+word_middle = word[1:-1]
+print("First 3 letters: {}".format(word_first_three))
+print("Last 2 letters: {}".format(word_last_two))
+print("Middle word: {}".format(word_middle))
