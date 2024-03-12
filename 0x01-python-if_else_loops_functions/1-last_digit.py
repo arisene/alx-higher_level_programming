@@ -15,6 +15,6 @@ if (l_digit > 5):
 elif (l_digit == 0):
     print("Last digit of {} is {} and is 0".format(number, l_digit))
 
-elif (l_digit < 6 and l_digit != 0):
+elif (l_digit < 6):
     print("Last digit of {} is {} and is less than 6 and not 0"
           .format(number, l_digit))
