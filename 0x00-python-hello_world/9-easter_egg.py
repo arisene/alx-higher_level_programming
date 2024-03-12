@@ -1,5 +1,3 @@
 #!/usr/bin/python3
 import this
-str = "The Zen of Python"
-str = str[ :-200]
-print("{}".format(str))
+print("{str[:-20]}".format(str = "The Zen of Python"))
