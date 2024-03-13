@@ -7,4 +7,4 @@ def uppercase(str):
             uppercase_text += uppercase_char
         else:
             uppercase_text += wd
-    return(print("{}".format(uppercase_text)))
+    return (print("{}".format(uppercase_text)))
