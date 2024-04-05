@@ -10,5 +10,5 @@ class Square:
     args: takes the size of the square as a parameter
     return: has no return value
     """
-    def __init__(self, __size):
-        self.__size = 3
+    def __init__(self,size):
+        self.__size = size
