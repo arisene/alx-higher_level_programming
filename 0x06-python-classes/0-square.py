@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-class Square:
-    """
-        class square defines a square
-    args:
-        no arguments
-    returns:
-        no return value
+"""
+Define a Square
+"""
 
-    """
+
+class Square:
+    """Empty Class"""
     pass
