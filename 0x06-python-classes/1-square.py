@@ -11,4 +11,9 @@ class Square:
     return: has no return value
     """
     def __init__(self,size):
+        """
+        initialize square
+        attribute:
+                size=self.__size
+        """
         self.__size = size
