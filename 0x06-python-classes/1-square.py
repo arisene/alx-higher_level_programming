@@ -6,6 +6,9 @@ a square with a private instance attribute
 
 
 class Square:
-    """size in the private instance attribute"""
+    """
+    args: takes the size of the square as a parameter
+    return: has no return value
+    """
     def __init__(self, __size):
         self.__size = 3
