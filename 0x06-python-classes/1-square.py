@@ -1,18 +1,13 @@
 #!/usr/bin/python3
-"""
-Based on 0-square.py
-a square with a private instance attribute
-"""
-
-
 class Square:
     """
-    args: takes the size of the square as a parameter
-    return: has no return value
+    class representing a square
     """
-    def __init__(self,size):
+    def __init__(self, size):
         """
         initialize square
+        args:
+            size: length of the sides of a square
         attribute:
                 size=self.__size
         """
