@@ -2,9 +2,8 @@
 class Square:
     """
     class representing a square
+    attributes: size
     """
-
-
     def __init__(self, size):
         """
         initialize square
