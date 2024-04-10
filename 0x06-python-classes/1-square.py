@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+module 1 creating a class
+"""
+
+
 class Square:
     """
     class representing a square

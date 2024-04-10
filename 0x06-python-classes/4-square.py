@@ -20,7 +20,7 @@ class Square:
             __size a private attribute of size set default to zero
         """
 
-        if not type(size) is int:
+        if not isinstance(size, int):
             raise TypeError("size must be an intege")
         elif size < 0:
             raise ValueError("size must be >= 0")
