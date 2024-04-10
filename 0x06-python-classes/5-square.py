@@ -64,3 +64,20 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
+
+    def my_print(self):
+        """
+        prints a square using "#" using the provided length
+        attribute:
+            takes no attribute
+        return:
+            has no return value
+        """
+        if self.__size == 0:
+            print()
+        else:
+            for i in range(self.__size):
+                print("#", end="")
+                for j in range(self.__size):
+                    print("#", end="")
+                print()

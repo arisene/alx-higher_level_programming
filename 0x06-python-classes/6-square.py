@@ -12,12 +12,13 @@ class Square:
     args:
         size(int) the length of the sides
     """
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
 
         """
         initialize class Square
         attributes:
             __size a private attribute of size set default to zero
+            position a tuple that takes two positive numbers, default set to (0, 0)
         """
 
         if not isinstance(size, int):
@@ -26,6 +27,8 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
+        
+        
 
     def area(self):
 
@@ -64,3 +67,21 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
+
+    def my_print(self):
+        """
+        prints a square using "#" using the provided length
+        attribute:
+            takes no attribute
+        return:
+            has no return value
+        """
+        if self.__size == 0:
+            print()
+        else:
+            for i in range(self.__size):
+                print("#", end="")
+                for j in range(self.__size):
+                    print("#", end="")
+                print()
+
