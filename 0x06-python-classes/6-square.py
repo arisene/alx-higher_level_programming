@@ -18,7 +18,7 @@ class Square:
         initialize class Square
         attributes:
             __size a private attribute of size set default to zero
-            position a tuple that takes two positive numbers, default set to (0, 0)
+        position a tuple that takes two positive numbers, default (0, 0)
         """
 
         if not isinstance(size, int):
@@ -27,8 +27,8 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
-        
-        
+
+        self.__position = position
 
     def area(self):
 
@@ -76,12 +76,43 @@ class Square:
         return:
             has no return value
         """
-        if self.__size == 0:
-            print()
+
+        if self.__size == 0 and self.position[1] == 0:
+            print("$")
+
         else:
             for i in range(self.__size):
+                for k in range(self.__position[0]):
+                    print("_", end="")
                 print("#", end="")
-                for j in range(self.__size):
+                for j in range(self.__size - 1):
                     print("#", end="")
-                print()
+                print("$")
+            print("$", end="")
 
+    @property
+    def position(self):
+        """
+        retrieve the value of self.__position
+        takes no parameters
+        return:
+            self.__position
+        """
+        return self.__position
+
+    @position.setter
+    def position(self, value):
+        """
+        change the value of position
+        attribute:
+            value
+        returns:
+            has no return value
+
+        """
+        if not len(value) == 2:
+            for item in value:
+                if not isinstance(item, int) or item < 0:
+                    raise TypeError("position must be a tuple of 2 positive")
+        else:
+            self.__position = value
