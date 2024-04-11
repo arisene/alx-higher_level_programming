@@ -19,7 +19,6 @@ class Rectangle:
         width(self, value)
         height(self)
         height(self, value)
-    
     """
     def __init__(self, width=0, height=0):
         """
