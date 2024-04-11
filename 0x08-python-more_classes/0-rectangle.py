@@ -2,7 +2,7 @@
 """
 Module 2 creating a class called rectangle
 """
-class Rectangle:
+class Rectangle():
     """
     Empty class Rectangle
     """
