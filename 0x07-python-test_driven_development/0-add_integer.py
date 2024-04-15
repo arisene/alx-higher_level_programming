@@ -10,11 +10,10 @@ def add_integer(a, b=98):
     raises:
         TypeError
     """
-    if isinstance(a, (int, float)) and isinstance(b,(int, float)):
+    if isinstance(a, (int, float)) and isinstance(b, (int, float)):
         return int(a) + int(b)
     else:
         if not isinstance(a, (int, float)):
             raise TypeError("a must be an integer")
         elif not isinstance(b, (int, float)):
             raise TypeError("b must be an integer")
-    
