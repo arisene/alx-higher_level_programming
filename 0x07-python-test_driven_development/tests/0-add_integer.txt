@@ -1,0 +1,49 @@
+# run test with python3 -m doctest -v ./tests/0-add_integer.txt
+
+First import the method to test
+>>> add_integer = __import__('0-add_integer').add_integer
+
+SUCCESS CASES:
+
+test signed , unsigned and floats
+>>> print(add_integer(5, 17))
+22
+>>> print(add_integer(-8, 17))
+9
+>>> print(add_integer(8.6, 17.4))
+25
+
+test default value 98:
+>>> print(add_integer(45))
+143
+
+FAILD CASES:
+
+tests for no parameters, many parameters input
+>>> print(add_integer())
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+
+>>> print(add_integer(3, 4, 6))
+Traceback (most recent call last):
+...
+TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+test for different data types
+>>> print(add_integer("go", 7))
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+>>> print(add_integer("go", "arsenal"))
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+test for NaN(not a number)
+>>> print(add_integer(float("NaN")))
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
+
