@@ -27,7 +27,7 @@ msg = "matrix must be a matrix (list of lists) of integers/floats"
 
 def matrix_divided(matrix, div):
     """ divide the elements of the matrix by div"""
-    if type(matrix) is not list or len(matrix) == 0 or len(matrix[0]) == 0:
+    if not isinstance(matrix,list) or  not are_integer(matrix) :
         raise TypeError(msg)
     elif equal_rows(matrix) != 1:
         raise TypeError("Each row of the matrix must have the same size")
