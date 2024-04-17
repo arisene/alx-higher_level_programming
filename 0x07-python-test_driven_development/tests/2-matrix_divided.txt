@@ -16,15 +16,11 @@ Test signed and unsigned ints and floats:
 FAILD CASES:
 
 Test if elements of matrix are int/floats:
-        >>> matrix4 = [
-    ...     [4,5,'you'],
-    ...     [6,False,8]
-    ... ]
-    >>> 
-    >>> print(matrix_divided(matrix4, 2))
+    >>> print(matrix_divided(None, 2))
+
     Traceback (most recent call last):
-    ...
-    TypeError: unsupported operand type(s) for /: 'str' and 'int'
+
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 Test if the  length of rows of matrix is the same:
 
