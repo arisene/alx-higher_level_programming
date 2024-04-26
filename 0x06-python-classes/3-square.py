@@ -37,3 +37,4 @@ class Square:
             uses the value of self.__size to calculate the area
         """
         return (self.__size ** 2)
+type
