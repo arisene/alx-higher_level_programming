@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Module 6-square
-Defines class Square with private size and position; and public area
+Module 101-square
+Defines class Square with private size & position; and public area & my_print
 Can access and update size and position
 Can print to stdout the square using #'s
 """
@@ -100,3 +100,18 @@ class Square:
             print("\n".join([" " * self.__position[0] +
                              "#" * self.__size
                              for rows in range(self.__size)]))
+
+    def __str__(self):
+        """
+        String representation of square so call to print works
+        Example: print(my_square)
+        """
+        string = ""
+        if self.__size == 0:
+            return string
+
+        string += "\n" * self.position[1]
+        string += "\n".join([" " * self.__position[0] +
+                             "#" * self.__size
+                             for rows in range(self.__size)])
+        return string
