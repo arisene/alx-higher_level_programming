@@ -23,7 +23,7 @@ class Rectangle:
         perimeter(self)
     """
     number_of_instances = 0
-
+    print_symbol = "#"
     def __init__(self, width=0, height=0):
         """
         the instantiation method of width and height
@@ -94,13 +94,17 @@ class Rectangle:
         else:
             rect = '\n'.join(['#' * self.__width
                               for rows in range(self.__height)])
-        return rect
+        return f"{rect}"
 
     def __repr__(self):
-        """print out the rectangle"""
+        """
+        print out the rectangle
+        """
         return f"Rectangle({self.__width}, {self.__height})"
 
     def __del__(self):
-        """delete instances"""
+        """
+        delete instances
+        """
         Rectangle.number_of_instances -= 1
         print('Bye rectangle...')
