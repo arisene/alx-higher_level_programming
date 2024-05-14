@@ -1,6 +1,13 @@
 #!/usr/bin/python3
+"""
+Module seven
+"""
+
 
 class BaseGeometry():
+    """
+    BaseGeometry
+    """
     def area(self):
         raise Exception("area() is not implemented")
 
