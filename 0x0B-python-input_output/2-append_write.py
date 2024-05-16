@@ -12,5 +12,4 @@ def append_write(filename="", text=""):
     """
     with open(filename, mode="a+", encoding="utf-8") as my_file:
         my_file.write(text)
-        length = my_file.tell()
-    return length
+    return len(text)
