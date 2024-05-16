@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Write a function that appends 
+Write a function that appends
 a string at the end of a text file
 """
 
