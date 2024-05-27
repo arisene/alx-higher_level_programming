@@ -1,3 +1,3 @@
--- Script that delete a database if it exist
+-- Script that creates a database if it doesn't exist
 
-DROP DATABASE IF EXISTS hbtn_0c_0;
+CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
