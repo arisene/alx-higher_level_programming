@@ -1,7 +1,6 @@
 #!/usr/bin/node
 const { argv } = require('node:process');
 
-// last index
 const lastIndex = argv.length - 1;
 
 if (lastIndex === 1) {
