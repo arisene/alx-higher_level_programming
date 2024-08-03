@@ -1,16 +1,13 @@
 #!/usr/bin/node
-const { argv } = require('node:process');
 
-const numList = [];
-if (isNaN(argv[2]) || argv.length < 2) {
-  console.log(0);
-}else if(isNaN(argv[3])){
-    console.log(0);
-} else {
-  for (let i = 2; i <= argv.length - 1; i++) {
-    numList.push(argv[i]);
+const numsArray = process.argv.slice(2);
+function secondMax (array) {
+  if (array.length < 2) {
+    return (0);
+  } else {
+    array.sort((x, y) => x - y);
+    array.pop();
+    return (array.pop());
   }
-  // console.log(numList.sort());
-  const newList = numList.sort().reverse();
-  console.log(newList[1]);
 }
+console.log(secondMax(numsArray));
